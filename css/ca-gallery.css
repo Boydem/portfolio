@@ -898,30 +898,33 @@ h2{
 #contact label{
     font-weight: 700;
 }
-#contact #emailHelp{
+#contact #nameHelp{
 color: var(--my-primary-a-80)!important;
 }
 #contact input,
 #contact textarea{
-    color: var(--off-black);
     /* background-color: transparent!important; */
+    font-size: 14px;
     border: 0px;
     background-color: var(--off-black);
+    color: var(--my-secondary);
 }
 
 #contact .btn-send{
     background-color: var(--off-black);
-    color: var(--my-third);
+    color: var(--my-third)!important;
 }
 #contact .btn-send:hover{
     background-color: var(--my-secondary);
     color: var(--off-black);
     
 }
-
+#contact input::selection,
+#contact textarea::selection{
+    color: var(--off-white);
+}
 #contact input::placeholder,
 #contact textarea::placeholder{
-    color: var(--off-black);
     color: var(--my-third);
     /* color: white!important; */
 
