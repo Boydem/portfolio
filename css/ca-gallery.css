@@ -8,9 +8,10 @@
 }
 
 :root{
-    --my-primary:rgb(17 29 62);
+    --my-primary:#020416;
     --my-primary-a-80:rgba(17, 29, 62, 0.678);
     --my-secondary:rgb(197, 146, 255); 
+    --my-secondary-a:197, 146, 255; 
     --my-third:rgb(247, 185, 71); 
     --off-white:#fdfbe9;
     --off-black:#020416;
@@ -366,8 +367,23 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: var(--off-black);
+    /* background-color: var(--off-black); */
     color: var(--off-white);
+}
+.content-wrapper{
+    width: max-content;
+    border: 1px solid rgba(var(--my-secondary-a),0.33);
+    background: linear-gradient(0deg, rgba(40,44,52,0.4) 0%, rgba(17,0,32,.5) 100%);
+    box-shadow: 0 7px 20px 5px #00000058;
+    border-radius: .7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: .2s all;
+}
+.content-wrapper:hover{
+    border: 1px solid rgba(var(--my-secondary-a),0.66);
+    transform: scale(1.06);
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
@@ -873,4 +889,40 @@ color: var(--off-white);
 
 h2{
     font-size: 4em!important;
+}
+
+.contact-title{
+    color: var(--off-primary);
+    margin-bottom: 1em;
+}
+#contact label{
+    font-weight: 700;
+}
+#contact #emailHelp{
+color: var(--my-primary-a-80)!important;
+}
+#contact input,
+#contact textarea{
+    color: var(--off-black);
+    /* background-color: transparent!important; */
+    border: 0px;
+    background-color: var(--off-black);
+}
+
+#contact .btn-send{
+    background-color: var(--off-black);
+    color: var(--my-third);
+}
+#contact .btn-send:hover{
+    background-color: var(--my-secondary);
+    color: var(--off-black);
+    
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder{
+    color: var(--off-black);
+    color: var(--my-third);
+    /* color: white!important; */
+
 }
