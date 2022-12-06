@@ -8,6 +8,6 @@ $('.contact-form').submit(function (e) {
     const subjectValue = $('.form-subj').val()
     const msgValue = $('.form-msg').val()
     window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=noyemdahan@gmail.com&su=${subjectValue}&body=from:${nameValue}, Name: ${nameValue}, \nMessage:${msgValue}&bcc=someone.else@example.com`
+        `https://mail.google.com/mail/?view=cm&fs=1&to=noyemdahan@gmail.com&su=${subjectValue}&body=from:${nameValue}, \nMessage:${msgValue}`
     )
 })
