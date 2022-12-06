@@ -39,7 +39,9 @@ function renderProjForModal() {
                 <!-- Project Details Go Here -->
                 <h2>${currProj.name}</h2>
                 <p class="item-intro text-muted">${currProj.title}</p>
+                <a href="${currProj.url}">
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/${currProj.id}.png" alt="">
+                </a>
                 <p>${currProj.desc}</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>

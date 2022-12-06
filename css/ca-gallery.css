@@ -664,9 +664,10 @@ header.masthead .intro-text .intro-heading {
     margin-top: 0;
 }
 .about-description {
-    max-width: 50%;
+    /* max-width: 50%; */
     margin: auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 @media (max-width: 800px) {
     .about-description {
