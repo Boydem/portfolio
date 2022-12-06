@@ -7,10 +7,5 @@ const $elMsg = $('#contact form textarea[id="contact-msg"]')
 
 $('.contact-form').submit(function (e) {
     e.preventDefault()
-    sendForm()
+    window.open = (`https://mail.google.com/mail/?view=cm&fs=1&to=noyemdahan@gmail.com&su=${$elSubj.value}&b%20ody=${$elMsg.value} , Lets talk about it. ${$elName.value}`, '_blank')
 })
-
-function sendForm() {
-    console.log('wsedgserg:')
-    window.popup = (`https://mail.google.com/mail/?view=cm&fs=1&to=noyemdahan@gmail.com&su=${$elSubj.value}&b%20ody=${$elMsg.value} , Lets talk about it. ${$elName.value}`, '_blank')
-}

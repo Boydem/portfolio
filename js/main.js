@@ -38,14 +38,14 @@ function renderProjForModal() {
   var strHTML = `
                 <!-- Project Details Go Here -->
                 <h2>${currProj.name}</h2>
-                <p class="item-intro text-muted">${currProj.title}</p>
-                <a href="${currProj.url}">
+                <p class="item-intro">${currProj.title}</p>
+                <a href="${currProj.url}" target="_blank">
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/${currProj.id}.png" alt="">
                 </a>
                 <p>${currProj.desc}</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
+                  <li>Date: January 2022</li>
+                  <li>Client: ${currProj.labels.join(', ')}</li>
                   <li>Category: Illustration</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
